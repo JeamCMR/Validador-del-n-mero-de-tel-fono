@@ -1,0 +1,145 @@
+:root{
+    --backgroundColor: #194996;
+    --textColorPhone: white;
+    --colorPhone: black;
+    --btnCheckActive:#19D256;
+    --btnClearActive:red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-project{
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px;
+    color: var(--textColorPhone);
+    letter-spacing: 3px;
+}
+
+.title-project span{
+    font-size: 3rem;
+}
+
+.phone{
+    width: 250px;
+    height: 480px;
+    background-color: var(--colorPhone);
+    background-image: url(/img/asfalt-light.png);
+    border-radius: 4%;
+    box-shadow: -1px 2px 48px 6px rgba(28,27,28,1);
+}
+
+.phone-carame{
+    height: 10%;
+    width: 80%;
+    background-color: var(--colorPhone);
+     background-image: url(/img/asfalt-light.png);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.camere-bar{
+    width: 60px;
+    height: 8px;
+    background-color: white;
+    
+}
+
+.phone-screen{
+    width: 220px;
+    height: 75%;
+    background-color: var(--textColorPhone);
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+}
+
+.phone-text{
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 10px;
+}
+
+.input-number{
+   padding: 20px;
+   font-size: 1.2rem;
+   border-radius: 20px ;
+}
+
+.result p{
+    text-align: center;
+    font-size: 1rem;
+    color: burlywood;
+    margin: 10px;
+}
+
+
+.phone-button{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center ;
+}
+
+.original-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 0px;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    border-bottom: 4px solid #9e9e9e;
+    transition: 0.3s;
+    box-shadow: 0px 5px 5px 0px rgba(100, 99, 99, 0.4);
+    background-color: #9a958f;
+    margin: 10px;
+  }
+  
+  .original-button:hover {
+    box-shadow: 0 0 rgba(0, 0, 0, 0.4);
+    border-bottom-width: 2px;
+    transform: translateY(2px);
+    cursor: pointer;
+  }
+
+  .clear:hover{
+    background-color: var(--btnClearActive)
+  }
+
+  .check:hover{
+    background-color: var(--btnCheckActive)
+  }
