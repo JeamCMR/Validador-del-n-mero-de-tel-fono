@@ -15,20 +15,22 @@ const checkInputValid = () =>{
     }
 }
 
-
-
-
-
+//Validar
 buttonCheck.addEventListener("click", ()=>{
     checkInputValid();
     const regexValid = /^(1\s?)?(\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$/;
-    if(regexValid.test(userInput.value)){
+    if(!regexValid.test(userInput.value)){
         debugger
-        console.log(result);
+        console.log("Entra en el if");
         result.classList.toggle("hidden");
-         result.textContent += `Valid US number: ${userInput.value}`
-        // console.log("Valid US number:" + userInput.value);
+         result.innerHTML += `<p>Valid US number: ${userInput.value}</p>`
     }else{
-        console.log("Invalid US number:" + userInput.value)
+        result.classList.toggle("hidden");
+        result.innerHTML += `<p>Invalid US number:" ${userInput.value}</p>`
+        
+        console.log("Entra en el else");
     }
+    userInput.value="";
 })
+
+
