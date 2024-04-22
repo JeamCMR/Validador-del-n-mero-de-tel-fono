@@ -100,6 +100,9 @@ body{
     margin: 10px;
 }
 
+.hidden{
+    display: none;
+}
 
 .phone-button{
     width: 100%;
@@ -143,3 +146,5 @@ body{
   .check:hover{
     background-color: var(--btnCheckActive)
   }
+
+ 
