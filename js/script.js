@@ -10,13 +10,21 @@ const result = document.getElementById("results-div");
 /*FUNCIONES Y EVENTOS */
 
 const checkInputValid = () =>{
-    debugger
     if(!userInput.value){
         alert("Please provide a phone number");
     }
 }
 
 
+
+
+
 buttonCheck.addEventListener("click", ()=>{
     checkInputValid();
+    const regexValid = /^(1\s?)?(\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$/;
+    if(regexValid.test(userInput.value)){
+        console.log("Valid US number:" + userInput.value);
+    }else{
+        console.log("Invalid US number:" + userInput.value)
+    }
 })
