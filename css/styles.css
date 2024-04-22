@@ -4,6 +4,8 @@
     --colorPhone: black;
     --btnCheckActive:#19D256;
     --btnClearActive:red;
+    --resultValid:#19D256;
+    --resultInvalid:rgb(202, 43, 32);
 }
 
 *{
@@ -93,13 +95,21 @@ body{
    border-radius: 20px ;
 }
 
-.result p{
+.result {
     text-align: center;
     font-size: 1rem;
     color: burlywood;
     margin: 10px;
+    overflow: auto;
 }
 
+.valid {
+    color:var(--resultValid) ;
+}
+
+.invalid{
+    color:var(--resultInvalid) ;
+}
 .hidden{
     display: none;
 }
