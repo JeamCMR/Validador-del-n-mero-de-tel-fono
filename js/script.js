@@ -16,3 +16,7 @@ const checkInputValid = () =>{
     }
 }
 
+
+buttonCheck.addEventListener("click", ()=>{
+    checkInputValid();
+})
