@@ -23,7 +23,11 @@ buttonCheck.addEventListener("click", ()=>{
     checkInputValid();
     const regexValid = /^(1\s?)?(\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$/;
     if(regexValid.test(userInput.value)){
-        console.log("Valid US number:" + userInput.value);
+        debugger
+        console.log(result);
+        result.classList.toggle("hidden");
+         result.textContent += `Valid US number: ${userInput.value}`
+        // console.log("Valid US number:" + userInput.value);
     }else{
         console.log("Invalid US number:" + userInput.value)
     }

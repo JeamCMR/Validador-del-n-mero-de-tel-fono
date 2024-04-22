@@ -93,7 +93,7 @@ body{
    border-radius: 20px ;
 }
 
-.result p{
+.result {
     text-align: center;
     font-size: 1rem;
     color: burlywood;
